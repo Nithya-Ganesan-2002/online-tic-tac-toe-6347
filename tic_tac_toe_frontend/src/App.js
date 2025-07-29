@@ -273,7 +273,7 @@ function App() {
           aria-pressed={gameMode === "ai"}
           onClick={() => handleModeChange("ai")}
         >
-          Play vs AI
+          You vs Computer
         </button>
       </div>
     );
@@ -427,7 +427,7 @@ function App() {
           Restart
         </button>
         <div style={{marginTop: 19, fontSize: "0.97rem", color: "var(--secondary)", fontWeight: 500}}>
-          {gameMode === "ai" ? "You vs AI! X = You, O = AI" : "Two-Player mode enabled."}
+          {gameMode === "ai" ? "You vs Computer! X = You, O = Computer" : "Two-Player mode enabled."}
         </div>
       </div>
     );
