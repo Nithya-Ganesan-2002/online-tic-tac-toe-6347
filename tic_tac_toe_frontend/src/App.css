@@ -101,4 +101,51 @@
     padding: 8px 16px;
     font-size: 12px;
   }
+  .ttt-square {
+    width: 52px !important;
+    height: 52px !important;
+    font-size: 2rem !important;
+  }
+}
+
+:root {
+  /* Tic Tac Toe custom variables */
+  --primary: #1565c0;
+  --secondary: #90caf9;
+  --accent: #ffd600;
+}
+
+/* Tic Tac Toe board and cell style */
+.ttt-square {
+  /* Most inline, some here for completeness */
+  box-sizing: border-box;
+  border-radius: 13px;
+  transition: background 0.13s, color 0.13s;
+}
+.ttt-square:focus {
+  outline: 2px solid var(--primary);
+  z-index: 6;
+}
+
+/* Winner highlighting */
+.ttt-winner {
+  border-color: var(--accent) !important;
+}
+
+.ttt-restart-btn {
+  box-shadow: 0 1px 8px rgba(21,101,192,0.04);
+}
+.ttt-restart-btn:hover,
+.ttt-restart-btn:focus {
+  background: var(--accent, #ffd600);
+  color: var(--primary, #1565c0);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .ttt-square {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.29rem !important;
+  }
 }
